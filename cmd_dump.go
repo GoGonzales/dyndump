@@ -11,13 +11,13 @@ import (
 	"os"
 	"time"
 
+	"github.com/GoGonzales/dyndump/dyndump"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/cheggaaa/pb"
-	"github.com/gwatts/dyndump/dyndump"
 )
 
 const (

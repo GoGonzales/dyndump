@@ -8,9 +8,9 @@ import (
 	"html/template"
 	"os"
 
+	"github.com/Gogonzales/dyndump/dyndump"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/gwatts/dyndump/dyndump"
 )
 
 var metadataTmpl = template.Must(template.New("md").Parse(`

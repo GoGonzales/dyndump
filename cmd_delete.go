@@ -10,10 +10,10 @@ import (
 	"io"
 
 	"github.com/Bowery/prompt"
+	"github.com/GoGonzales/dyndump/dyndump"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/cheggaaa/pb"
-	"github.com/gwatts/dyndump/dyndump"
 )
 
 type deleter struct {
