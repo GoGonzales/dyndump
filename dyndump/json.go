@@ -18,34 +18,34 @@ type attributeValue struct {
 	// A Binary data type.
 	//
 	// B is automatically base64 encoded/decoded by the SDK.
-	B []byte `json:",omitempty"`
+	B []byte `json:""`
 
 	// A Boolean data type.
-	BOOL *bool `json:",omitempty"`
+	BOOL *bool `json:""`
 
 	// A Binary Set data type.
-	BS [][]byte `json:",omitempty"`
+	BS [][]byte `json:""`
 
 	// A List of attribute values.
-	L []*attributeValue `json:",omitempty"`
+	L []*attributeValue `json:""`
 
 	// A Map of attribute values.
-	M map[string]*attributeValue `json:",omitempty"`
+	M map[string]*attributeValue `json:""`
 
 	// A Number data type.
-	N *string `json:",omitempty"`
+	N *string `json:""`
 
 	// A Number Set data type.
-	NS []*string `json:",omitempty"`
+	NS []*string `json:""`
 
 	// A Null data type.
-	NULL *bool `json:",omitempty"`
+	NULL *bool `json:""`
 
 	// A String data type.
-	S *string `json:",omitempty"`
+	S *string `json:""`
 
 	// A String Set data type.
-	SS []*string `json:",omitempty"`
+	SS []*string `json:""`
 }
 
 func toAttribute(src *dynamodb.AttributeValue) (dst *attributeValue) {
